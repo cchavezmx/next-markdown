@@ -70,7 +70,7 @@ PS C:\Users\user_name> dir
 
   `dir` es un comando que nos permite ver los archivos que tenemos en nuestra carpeta,
   > #### _**intentalo y pruébalo en tu terminal.**_
-  [¿Quires Regresa al temario?](#temario)
+  [¿Quieres Regresa al temario?](#temario)
 
   * * *
 
@@ -94,7 +94,7 @@ PS C:\Users\user_name> dir
   Este comando nos permite volver a la carpeta anterior.
 
   > #### _**intentalo y pruébalo en tu terminal.**_
-  [¿Quires Regresa al temario?](#temario)
+  [¿Quieres Regresa al temario?](#temario)
 
   * * *
 
@@ -109,7 +109,7 @@ PS C:\Users\user_name> dir
   ```
   
  > #### _**intentalo y pruébalo en tu terminal.**_
-  [¿Quires Regresa al temario?](#temario)
+  [¿Quieres Regresa al temario?](#temario)
 
 
 
@@ -211,7 +211,7 @@ PS C:\Users\user_name> dir
   📌 __Nota:__ A continuación el Wizard (asi se llama a esta serie de ventanas que nos guian para instalar cualquier aplicación)
   nos lleva por una serie de ventanas que nos permiten seguir configurando la aplicación, pero en este caso no nos interesa, porque ya tenemos todo lo que necesitamos para poder usar Git en nuestro sistema operativo, a continuacion vamos a dar __Next__ en las siguientes ventanas. 
 
-  🚨 __Importante:__  Te anotaremos a cual de ellas debes prestar mas ATENCIÓN!!! .
+  🚨 __Importante:__  Te anotaremos en cual de ellas debes prestar mas ATENCIÓN!!! .
 
   * * *
 
@@ -276,7 +276,7 @@ PS C:\Users\user_name> dir
 
    🥳🥳🥳🥳🥳🥳🥳🥳🥳 Felicidades, ya tenemos Git instalado en nuestro sistema operativo y es compatible con cmd o powershell de windows, te recomendamos reinicar el equipo para poder trabajar con Git en la terminal de windows.  🥳🥳🥳🥳🥳🥳🥳🥳
 
-  > #### _**Quieres regresar al temario** [¿Quires Regresa al temario?](#temario)_
+  > #### _**Quieres regresar al temario** [¿Quieres Regresa al temario?](#temario)_
    
   * * *
 
@@ -343,7 +343,7 @@ PS C:\Users\user_name> dir
 
   🧠 __Para saber más:__ Si quieres aprender más por tu cuenta de  Visual Studio Code, puedes consultar el siguiente enlace [Visual Studio Code desde cero](https://manz.dev/software/vscode/). Manzdev, es un divulgador de software en Español que nos enseña a usar Visual Studio Code desde cero.
   
-  > ¿lo lograste? 🤔 o quires [regresa al inicio de esta sección](#primeros-pasos-con-git)
+  > ¿lo lograste? 🤔 o Quieres [regresa al inicio de esta sección](#primeros-pasos-con-git)
   
   * * * 
 
