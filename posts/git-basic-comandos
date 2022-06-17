@@ -393,7 +393,7 @@ PS C:\Users\user_name> dir
 
   ```
   nombre_proyecto
-  mi_proyecto_24
+  mi-proyecto-24
 
   ```
 
@@ -406,7 +406,7 @@ PS C:\Users\user_name> dir
 
   ```
 
-  - No encimes un nombre de proyecto que ya existe.
+  - No encimes un proyectos de git en otros proyectos que ya existe.
  
   🧠 __Para saber más:__ Cuando usamos la terminal, o archivos de sistema o de archivos de nuestros proyectos, html, css, bases deatos etc, es mala idea usar espacios en blanco, acentos, caracteres extraños, signos de puntuacion, etc.
 
