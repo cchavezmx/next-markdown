@@ -1,0 +1,461 @@
+---
+title: 'Primeros pasos en Git'
+metaTitle: 'Next.js page options and how they work'
+metaDesc: 'How to use pages in Next.js exploring the options'
+socialImage: images/68z11uk2k1w51.jpg
+date: '2021-09-22'
+tags:
+  - nextjs
+---
+
+## Terminal, instalación, configuración y ¿qué es Git?
+
+## Temario: {#temario}
+
+  - [¿Qúe es GIT?](#que-es-git)
+  - [La Terminal](#terminal)
+    - [Ver archivos](#dir)
+    - [Regresar una carpeta](#dirpunto)
+    - [Crear una carpeta](#mkdir)
+  - [Instalando Git](#instalacion)
+  - [Primeros pasos en Git](#primeros-pasos-con-git)
+    - [Iniciar un repositorio local](#iniciar-un-repositorio-local)
+    - [Usando Visual Studio Code](#usando-visual-studio-code)
+  - [Comentarios Finales](#comentarios-finales)
+    
+* * *
+
+  ## ¿Qúe es GIT? {#que-es-git}
+
+  Hoy en día, Git es, un sistema de control de versiones, ¿pero qué significa eso?,
+  un control de versiones es un sistema que registra cada cambio que realizas en tu código,
+  podria entenderse como un sistema de respaldo de tu código,
+
+  No es necesario subir tu codigo a un repositorio, como lo es en Github o Gitlab, entre otros, si no que este control de respaldos se encuentra en tu computadora, y los repositorios solo sirven para que tu código se pueda compartir entre personas.
+
+  Normalmente podemos pensar en Git como un árbol, y acada rama de este árbol, es una versión de tu código, por defecto el árbol tiene una rama master o main, y esta rama se define por defecto cuando creamos un nuevo proyecto.
+
+  Cada rama de nuestro codigo reciben el nombre de branches y podemos cambiar de rama o branch, y de esta forma poder trabajar en distintas versiones de nuestro código, sin afectar a la rama main osea la principal. 
+
+  > __***Pero no te preocupes si no entiendes esto a la primera, primero enfoquemonos en nuestra mesa de trabajo, la "terminal".***__
+
+
+  * * *
+
+## La terminal {#terminal}
+
+
+Si tienes windows 8, 10 u 11, la terminal por defecto es Power Shell, aqui podemos usar Git pero deberias de configuralo para que funcione, ya que existe un "espacio" llamado variables de entorno donde podemos definir más comandos y que sean compatibles con la consola. 
+
+Pero no te preocupes, podemos definir estas variables de entorno en la instalación de Git.
+
+Antes de instalar repasemos algunos aspectos de la terminal.
+la terminal de Power Shell luce de la siguiente manera: 
+
+```
+PS C:\Users\user_name>
+
+```
+
+
+## Ver archivos {#dir}
+
+ Al abrir la terminal esta nos indica en que carpeta estamos, el nombre de tu usuario de windows y al final un indicador que parpadea que nos indica que podemos escribir un comando, repasemos algunos comandos basicos de la terminal.
+  
+
+```
+PS C:\Users\user_name> dir 
+
+```
+
+  `dir` es un comando que nos permite ver los archivos que tenemos en nuestra carpeta,
+  > #### _**intentalo y pruébalo en tu terminal.**_
+  [¿Quires Regresa al temario?](#temario)
+
+  * * *
+
+  
+  ## Regresar una carpeta {#dirpunto}
+
+  Ya que listamos los archivos que tenemos en nuestra carpeta, podemos entrar en una carpeta y ver los archivos que tenemos en ella, para ello podemos usar el comando: 
+
+  ```
+  PS C:\Users\user_name> cd my_folder
+
+  ```
+
+  Si lo que quieres es volver a la carpeta anterior podemos usar el siguiente comando.
+ 
+  ```
+  PS C:\Users\user_name> cd ..
+
+  ```
+
+  Este comando nos permite volver a la carpeta anterior.
+
+  > #### _**intentalo y pruébalo en tu terminal.**_
+  [¿Quires Regresa al temario?](#temario)
+
+  * * *
+
+
+  ## Crear una carpeta {#mkdir}
+
+  Otro comando importante es para crear una carpeta, para ello podemos usar el siguiente comando:
+
+  ```
+  PS C:\Users\user_name> mkdir nuevo_folder
+
+  ```
+  
+ > #### _**intentalo y pruébalo en tu terminal.**_
+  [¿Quires Regresa al temario?](#temario)
+
+
+
+  * * *
+  * * *
+
+  ## Instalando Git {#instalacion}
+
+  La instalación de Git es muy sencilla, primero tenemos que ir a la página oficial de Git, y descargar la última versión.
+
+  Para windows: 
+  [Descargar Git para Windows 64 Bits](https://github.com/git-for-windows/git/releases/download/v2.36.1.windows.1/Git-2.36.1-64-bit.exe){target="_blank"} 
+
+  > #### _**TIP: te invitamos a explorar la página oficial de git, entra y descubre lo que tiene para ti:  [Sito oficial de Git](https://git-scm.com/){target="_blank"}**_
+
+   Una vez descargado el programa, damos doble click en el archivo que se descargo,
+
+  ![ventana de permisos de windows](/images/gitInstalador.jpg)
+   
+   Al hacer esto se abrirá una serie de ventanas a manera de guia, que nos permitirá configurarlo. 
+   nosotros también te guiaremos en este paso a paso en la instalación y te explicaremos algunas cosas.
+
+  > Si ya lo tienes instalado será una muy buena desinstalar la versión que tenemos en nuestro ordenador y volver a instalarlo, para que puedas configurar las opciones que te permitiran usar Git en powershell y guiarte en el paso a paso en la instalación.
+
+  ### Primera ventana: 
+
+  ![primera ventana de instalacion de Git](/images/git_instal_01.jpg)
+
+   📌 __Nota:__ Ventana de seguridad de windows, nos pregunta si estamos de acuerdo en instalar el programa, damos click en SI para continuar.
+
+
+  ### Segunda ventana: 
+
+  ![segunda ventana de instalacion de Git](/images/git_instal_02.jpg)
+
+   📌 __Nota:__ Todos los programas tienen sus licencias de uso, debemos estar de acuerdo con sus terminos y condiciones si queremos que instale su programa, nosotros solamente le damos __Next__, y si quieres, podrias leerlo, pero creo que nadie nunca creo que hace eso 😁.
+
+  ### Tercera ventana: 
+
+  ![tercera ventana de instalacion de Git](/images/git-instalacion-carpeta_install.jpg)
+
+  📌 __Nota:__ esta ventana nos informa en que carpeta de nuestro sistema operativo se van a instalar.
+  damos click en __Next__ para continuar.
+
+
+  ### Cuarta ventana:
+
+  ![cuarta ventana de instalacion de Git](/images/git_instal_03.jpg)
+
+   📌 __Nota:__ esta ventana es la más interesante, en ella definimos que queremos que se instale o que acciones queremos que se habiliten asegurate de marcar las opciones que están te marcamos en la imagen.
+
+   🚨 __Importante:__ La opción que nos interesa es la que dice: __**(NEW!)Add a GitBash Profile to Windows Terminal__.
+  Con ella habilitamos el uso de Git en la terminal de windows 🚨.
+
+  Damos Next y nos lleva a una cuarta ventana.
+
+  ### Quinta ventana:
+
+  ![quinta ventana de instalacion de Git](/images/git-instalacion-menu_inicio.png)
+
+   📌 __Nota:__ esta pantalla indica el nombre de la carpeta en el menú de Inicio: en otras palabras en que parte del menú de windows podemos encontrar el acceso al programa, pero si marcaste las casillas que te sugremimos en el paso anterior el icono de git aparecera en el escritorio, asi que simplemente damos Next para continuar y pasar a la siguiente ventana.
+
+
+  ### Sexta ventana:
+
+  ![sexta ventana de instalacion de Git](/images/git-instalacion-visual.png)
+
+   📌 __Nota:__ Ventana de configuración de editor, Despliegue la caja de lista para elegir otro editor. se recomienda elegir Visual Studio Code.
+
+
+  ### Séptima ventana:
+
+  ![séptima ventana de instalacion de Git](/images/git-instalacion-main-slave.png)
+
+   📌 __Nota:__ La siguiente pantalla permite elegir el nombre de la rama principal de los nuevos repositorios. Tradicionalmente la rama principal recibía el nombre de master, pero desde hace años este término se ha visto envuelto en polémica ya que hay personas que lo consideran racista pero ya que muchos proyectos están modificando la denominación de master. 
+   aunque Git todavía no ha decidido el cambio, pero GitHub ha empezado a utilizar el término main, es el que elegiremos aquí...
+
+   cambiamos el nombre de la rama principal a main y damos Next para continuar
+
+  ### Octava ventana:
+
+  ![séptima ventana de instalacion de Git](/images/git-instalacion-PATH.png)
+
+   📌 __Nota:__ La siguiente pantalla permite elegir el tipo de terminal desde las que se podrá usar Git:
+   nos aseguramos que elegimos la opción recomendada (Recommended), y damos Next para continuar.
+
+
+  ### Novena ventana:
+
+  ![séptima ventana de instalacion de Git](/images/git-instalacion-PATH.png)
+
+   📌 __Nota:__ La siguiente pantalla permite elegir el tipo de terminal desde las que se podrá usar Git:
+   nos aseguramos que elegimos la opción recomendada (Recommended), y damos Next para continuar.
+
+   * * *
+
+  ### Muchas ventanas:
+
+  📌 __Nota:__ A continuación el Wizard (asi se llama a esta serie de ventanas que nos guian para instalar cualquier aplicación)
+  nos lleva por una serie de ventanas que nos permiten seguir configurando la aplicación, pero en este caso no nos interesa, porque ya tenemos todo lo que necesitamos para poder usar Git en nuestro sistema operativo, a continuacion vamos a dar __Next__ en las siguientes ventanas. 
+
+  🚨 __Importante:__  Te anotaremos a cual de ellas debes prestar mas ATENCIÓN!!! .
+
+  * * *
+
+  La siguiente pantalla permite elegir el ejecutable SSH
+  ![ventanas de configuracion de git](/images/git-many01.jpg)
+  __Damos Clic en Next__ para continuar.
+
+  * * *
+  La siguiente pantalla permite elegir la biblioteca SSL/TLS
+  ![ventanas de configuracion de git](/images/git-many02.jpg)
+  __Damos Clic en Next__ para continuar.
+
+  * * *
+  La siguiente pantalla permite elegir el carácter de final de línea:
+  ![ventanas de configuracion de git](/images/git-many03.jpg)
+  __Damos Clic en Next__ para continuar.
+
+  * * *
+
+  🚨🚨🚨🚨 IMPORTANTE!!! La siguiente pantalla permite elegir el tipo de terminal de Git
+  asegurete de marcar la opcion que marcamos en la siguiente imagen: 🚨🚨🚨🚨
+
+  ![ventanas de configuracion de git](/images/git-many04.jpg)
+  __Damos Clic en Next__ para continuar.
+
+  * * *
+  La siguiente pantalla permite elegir el comportamiento de la orden "git pull":
+  ![ventanas de configuracion de git](/images/git-many05.jpg)
+  __Damos Clic en Next__ para continuar.
+
+  * * *
+
+  La siguiente pantalla permite elegir el gestor de credenciales:
+  ![ventanas de configuracion de git](/images/git-many06.jpg)
+  __Damos Clic en Next__ para continuar.
+
+  * * *
+  La siguiente pantalla permite elegir algunas características experimentales (en algunas versiones no aparece esta pantalla):
+  ![ventanas de configuracion de git](/images/git-many07.jpg)
+  __Damos Clic en Next__ para continuar.
+
+  > Como se comentaba anteriormente, en la siguiente pantalla puede aparecer o no, lo importante es que darnos cuenta que ahora el boton de Next cambio el nombre a __Install__.
+  
+  * * * 
+
+  ### Proceso de instalación  y final:
+
+  La siguiente pantalla nos muestra el proceso de instalación.
+  ![proceso de instalación](/images/git_instal_06.jpg)
+
+  y finalmente la pantalla de finalización.
+  ![proceso de instalación](/images/git-instalacion-final.png)
+
+   📌 __Nota:__ LLegamos al final de Wizard
+
+  
+   Damos click en Finish para finalizar la instalación.
+
+   Se abrira una ventana del explorador de internet con las notas de la aplicación, puedemos cerrarla.
+
+   ![proceso de instalación](/images/release_notes_git.png)
+
+   🥳🥳🥳🥳🥳🥳🥳🥳🥳 Felicidades, ya tenemos Git instalado en nuestro sistema operativo y es compatible con cmd o powershell de windows, te recomendamos reinicar el equipo para poder trabajar con Git en la terminal de windows.  🥳🥳🥳🥳🥳🥳🥳🥳
+
+  > #### _**Quieres regresar al temario** [¿Quires Regresa al temario?](#temario)_
+   
+  * * *
+
+  ### Primeros pasos con Git: {#primeros-pasos-con-git}
+
+  Como te comentamos anteriormente, no es necesario crear un repositorio remoto en GitHub o GitLab, solo es necesario crear un repositorio local, en capitulos posteriores te enseñaremos como crear un repositorio remoto y todo lo que tienes que saber.
+  
+  Por ahora vamos a probar que todo funciona bien, creando un repositorio local en nuestro sistema operativo, y vamos a trabajar con el creando un archivo llamado __README.md__
+
+  * * *
+
+  ### Iniciar un repositorio local: {#iniciar-un-repositorio-local}
+  Para iniciar un repositorio local, vamos a usar el comando __git__, y damos __init__ para iniciar un repositorio local, vamos paso a paso: 
+
+  - Abrimos powershell y escribimos:
+
+  ```powershell
+  PS C:\Users\user_name> git init nuevo_proyecto
+  Initialized empty Git repository in C:/Users/user_name/nuevo_proyecto/.git/
+
+  ```
+  📌 __Nota:__ el comando git init al indicarle el nombre del proyecto. Creará una carpeta configurada y vacía con el nombre que le has indicado.
+
+  📌 __Nota:__ Te diste cuenta de el mensaje de salida que nos mostro: __Initialized empty Git repository in C:/Users/user_name/nuevo_proyecto/.git/__ de esta forma la terminal nos muestra que todo ha ido bien o mostrara un mensaje de error si algo falla.
+
+  Hecho esto vamos a entrar al directorio que hemos creado. ¿recuerdas como?
+
+  ```powershell
+  PS C:\Users\user_name> cd .\nuevo_proyecto\
+  PS C:\Users\user_name\nuevo_proyecto>
+
+  ```
+  ❔ __¿Qué paso?__ Al entrar en la carpeta del proyecto con el comando `cd` seguido del nombre del proyecto, la terminal nos devuelve una nueva linea con la nueva ruta de la carpeta.
+
+  Bien hecho, ya estamos en la carpeta del proyecto 🥳🥳.
+
+  > 📌 __Nota:__ si te sientes perdido y no sabes en que carpeta estas, puedes usar el comando __`pwd`__, que nos permite saber en que carpeta estamos.
+
+  ```powershell
+  PS C:\Users\user_name\nuevo_proyecto> pwd
+
+  Path
+  ----
+  C:\Users\user_name\nuevo_proyecto
+
+  PS C:\Users\user_name\nuevo_proyecto>
+
+  ```
+
+
+  * * * 
+
+  ### Usando Visual Studio Code: {#usando-visual-studio-code}
+
+  Ya dentro de la carpeta del proyecto, vamos a abrir Visual Studio Code de la siguiente forma:
+
+  ```powershell
+  PS C:\Users\user_name\nuevo_proyecto> code .
+
+  ```
+
+  ❔ __¿Qué paso?__ Al entrar el comando `code` seguido de un espacio en blanco y un punto, nos abre una ventana de Visual Studio Code, en la que podemos empezar a trabajar, los archivos que vayamos creando se guardaran en la carpeta del proyecto que acabamos de crear.
+
+
+  🧠 __Para saber más:__ Si quieres aprender más por tu cuenta de  Visual Studio Code, puedes consultar el siguiente enlace [Visual Studio Code desde cero](https://manz.dev/software/vscode/). Manzdev, es un divulgador de software en Español que nos enseña a usar Visual Studio Code desde cero.
+  
+  > ¿lo lograste? 🤔 o quires [regresa al inicio de esta sección](#primeros-pasos-con-git)
+  
+  * * * 
+
+  - Siguiente paso:
+
+   Ahora debemos de tener abierto Visual Studio Code pero esta vacio, hagamos un archivo: 
+
+  ![visual studio code](/images/visual_big.jpg)
+
+  - Ubica el menu de archivos del Visual Studio Code, haga click en el icono de un archivo y seleccione __`New File`__.
+
+  ![visual studio code](/images/crearnuevo.jpg)
+
+  📌 __Nota:__ no encuentras el icono archivo nuevo, pon tu mouse sobre el nombre del proyecto y se abrira un menu de opciones.
+ 
+  - una vez que hayas seleccionado el boton de __`New File`__, se abrira una ventana de diálogo, en el podemos escribir el nombre del archivo. Ponemos __`README.md`__ y hacemos un ENTER con el teclado.
+
+  ![visual studio code](/images/nuevo_archivo.jpg)
+
+  - Ahora fiajte que se abrio el archivo que acabamos de crear en una nueva pestaña en Visual Studio Code. este es nuestro archivo __README.md__ agregemos una linea de texto:
+
+  ![visual studio code](/images/nuevo_README.jpg)
+
+  - Ya que añadimos esta linea guardemos con la combinación de teclas __`Ctrl+S`__.
+
+
+  📌 __Nota:__ Fijate que al guardar el archivo se quito el puntito en la pestaña, este es un indicador, cuando modificamos el archivo, el puntito se activa, y cuando lo guardamos, se quita.
+
+  ![visual studio code](/images/guardar_status.jpg)
+
+  Felicidades!!! 🥳🥳, ya tenemos un repositorio local creado, un un archivo __README.md__ y configurado en poweshell pero... te preguntaras cual es la magia de Git... 🤔 ¿cúal es la diferencia entre Git y GitHub? o ¿Que es lo que conseguimos con Git? 🤔
+  ¿Para que sirve y para que usamos Git? 🤔
+
+  Veamoslo en el siguiente capítulo.
+
+
+  * * *
+
+  ## Comentarios Finales {#comentarios-finales}
+
+  Pero antes... para activar el siguiente capitulo, me gustaria que pruebes hacer muchos proyectos. Que repitas todos los pasos de esta seccion hasta que creas que lo dominas: 
+  [Primeros pasos con Git](#primeros-pasos-con-git)
+
+  Crea tantos proyectos como quiereas, ten en cuenta las siguientes reglas:
+
+  - El nombre del proyecto debe tener una sola palabra, puedes usar guiones para separar palabras. ejemplo: 
+
+  ```
+  nombre_proyecto
+  mi_proyecto_24
+
+  ```
+
+  - No son validos los nombres con espacios o caracters extraños como nombre de proyecto:
+  
+  ```
+  mi proyecto 24
+  mi proyecto 24
+  "!"#!"proyecto 24
+
+  ```
+
+  - No encimes un nombre de proyecto que ya existe.
+ 
+  🧠 __Para saber más:__ Cuando usamos la terminal, o archivos de sistema o de archivos de nuestros proyectos, html, css, bases deatos etc, es mala idea usar espacios en blanco, acentos, caracteres extraños, signos de puntuacion, etc.
+
+
+  🏆 __Ponte a prueba__ 
+  con los siguientes comandos de Git:
+
+  ```powershell
+  
+  PS C:\Users\user_name\nuevo_proyecto> git --version
+
+  ```
+
+  ```powershell
+  
+  PS C:\Users\user_name\nuevo_proyecto> git status
+
+  ```
+
+  ```powershell
+  
+  PS C:\Users\user_name\nuevo_proyecto> git log
+
+  ```
+
+  ```powershell
+  
+  PS C:\Users\user_name\nuevo_proyecto> git show
+
+  ```
+
+  Pruebalos, documenta cada uno de ellos, y cuando termines de probarlos, saca una foto de cada uno de ellos y enviala a `carlos@devf.mx` para desbloquear el capitulo fundamentos de Git.
+
+   - ¿Puedes agaregar archivos de html y css a tu proyecto?, o te gustaria repazar el uso de Visual Studio Code... 
+
+
+  * * *
+
+  FIN 
+  REGRSAR. [REGRESAR AL TEMARIO](#temario)
+
+
+
+
+
+
+
+
+
+
+
+
