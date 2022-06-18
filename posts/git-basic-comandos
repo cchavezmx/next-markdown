@@ -45,7 +45,7 @@ tags:
 ## La terminal {#terminal}
 
 
-Si tienes windows 8, 10 u 11, la terminal por defecto es Power Shell, aqui podemos usar Git pero deberias de configuralo para que funcione, ya que existe un "espacio" llamado variables de entorno donde podemos definir más comandos y que sean compatibles con la consola. 
+Si tienes windows 8, 10 u 11, la terminal por defecto es Power Shell, aqui podemos usar Git pero deberias de configuralo para que funcione, ya que existe un "espacio" llamado variables de entorno donde podemos definir más comandos y que sean compatibles con la terminal. 
 
 Pero no te preocupes, podemos definir estas variables de entorno en la instalación de Git.
 
@@ -164,8 +164,7 @@ PS C:\Users\user_name> dir
    🚨 __Importante:__ La opción que nos interesa es la que dice: __**(NEW!)Add a GitBash Profile to Windows Terminal__.
   Con ella habilitamos el uso de Git en la terminal de windows 🚨.
 
-  Damos Next y nos lleva a una cuarta ventana.
-
+  Damos Next y nos lleva a una quinta ventana
   ### Quinta ventana:
 
   ![quinta ventana de instalacion de Git](/images/git-instalacion-menu_inicio.png)
@@ -190,14 +189,6 @@ PS C:\Users\user_name> dir
    cambiamos el nombre de la rama principal a main y damos Next para continuar
 
   ### Octava ventana:
-
-  ![séptima ventana de instalacion de Git](/images/git-instalacion-PATH.png)
-
-   📌 __Nota:__ La siguiente pantalla permite elegir el tipo de terminal desde las que se podrá usar Git:
-   nos aseguramos que elegimos la opción recomendada (Recommended), y damos Next para continuar.
-
-
-  ### Novena ventana:
 
   ![séptima ventana de instalacion de Git](/images/git-instalacion-PATH.png)
 
