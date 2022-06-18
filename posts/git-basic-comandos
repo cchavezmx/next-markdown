@@ -289,9 +289,9 @@ PS C:\Users\user_name> dir
   * * *
 
   ### Iniciar un repositorio local: {#iniciar-un-repositorio-local}
-  Para iniciar un repositorio local, vamos a usar el comando __git__, y damos __init__ para iniciar un repositorio local, vamos paso a paso: 
-
-  - Abrimos powershell y escribimos:
+  Para iniciar un repositorio local, vamos a usar el comando __git__, seguido de un espacio y despúes la palabra __init__ damos otro espacio, seguido de el nombre del proyecto que queremos crear de esta forma iniciamos el comando dando un enter con el teclado.
+  
+  - vamos paso a paso, abre tu powershell y escribe los comandos entes descritos de la siguiente forma:
 
   ```powershell
   PS C:\Users\user_name> git init nuevo_proyecto
