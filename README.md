@@ -20,12 +20,9 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+Este sitio nace con el propósito de servir de guia, para aprender javascript y diferentes tecnologías de una forma sencilla paso a paso y sin necesidad de una gran cantidad de conocimientos previos.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
 ## Deploy on Vercel
 
