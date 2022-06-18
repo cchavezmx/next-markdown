@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 export default function Layout({ children }) {
   const router = useRouter();
   return (
-    <div className='flex flex-col min-h-screen'>
+    <div className='flex flex-col w-screen'>
       <div className='bg-sky-600 mb-8 py-4'>
         <div className='container mx-auto flex justify-center flex-col text-center'>
           {
@@ -16,7 +16,7 @@ export default function Layout({ children }) {
               <p className="mx-auto text-xtream text-white font-medium">
                 <span className="font-bold">Ctrl</span> + <span className="font-bold">Shift</span> + <span className="font-bold">U</span>
               </p>
-              <p className="mx-auto text-2xl bg-yellow-400 text-rose-900 font-bold">
+              <p className="mx-auto bg-yellow-400 text-rose-900 font-bold text-font-base">
                   Da click <a className='font-extrabold' href='https://www.microsoft.com/es-es/edge?r=1' target="_blank noopener">aqui</a> si no tienes este navegador
               </p>
             </>)          
@@ -34,7 +34,7 @@ export default function Layout({ children }) {
         </div>
         {/* <a href='https://www.microsoft.com/es-es/edge?r=1'>Como instalar Microsoft Edge</a> */}
       </div>
-      <main className='container font-bold mx-auto flex-2'>{children}</main>
+      <main className='container text-font-base font-bold mx-auto flex-2'>{children}</main>
     </div>
   );
 }

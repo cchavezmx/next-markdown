@@ -6,13 +6,10 @@ module.exports = {
   ],
   theme: {
     fontSize: {
-      'xtream': '1.8rem',
-    },    
-    extend: {
-      h4: {
-        fontSize: '2.5rem',
-      }
+      'xtream': '6.28rem',
+      'font-base': '4.25rem',
     },
+    extend: {},
   },
   plugins: [require('@tailwindcss/typography')],
 }
