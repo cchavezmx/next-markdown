@@ -397,8 +397,10 @@ PS C:\Users\user_name> dir
 
   ```
 
-  - No son validos los nombres con espacios o caracters extraños como nombre de proyecto:
-  
+  - No son validos los nombres con espacios o caracters extraños como nombre de proyecto incluida la ñ, está prohibido.:
+
+  algunos ejemplos:
+
   ```
   mi proyecto 24
   mi proyecto 24
@@ -407,8 +409,9 @@ PS C:\Users\user_name> dir
   ```
 
   - No encimes un proyectos de git en otros proyectos que ya existe.
+
  
-  🧠 __Para saber más:__ Cuando usamos la terminal, o archivos de sistema o de archivos de nuestros proyectos, html, css, bases deatos etc, es mala idea usar espacios en blanco, acentos, caracteres extraños, signos de puntuacion, etc.
+  🧠 __Para saber más:__ Cuando usamos la terminal, archivos de sistema o al crear archivos para nuestros proyectos, html, css, bases de datos etc, es mala idea usar espacios en blanco, acentos, caracteres extraños, signos de puntuacion, etc.
 
 
   🏆 __Ponte a prueba__ 
@@ -440,7 +443,7 @@ PS C:\Users\user_name> dir
 
   Pruebalos, documenta cada uno de ellos, y cuando termines de probarlos, saca una foto de cada uno de ellos y enviala a `carlos@devf.mx` para desbloquear el capitulo fundamentos de Git.
 
-   - ¿Puedes agaregar archivos de html y css a tu proyecto?, o te gustaria repazar el uso de Visual Studio Code... 
+   - ¿Puedes agaregar archivos de html y css a tu proyecto?, te gustaria repazar el uso de Visual Studio Code... 
 
 
   * * *
