@@ -38,7 +38,7 @@ export default function PostPage({ frontmatter, content }) {
   }).render(contnent);
 
   return (
-    <div className='prose mx-auto'>
+    <div className=' prose mx-2'>
       <h1>{frontmatter.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: mdMiddleWare(content) }} />
     </div>

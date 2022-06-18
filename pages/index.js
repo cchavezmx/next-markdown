@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Home({ posts }) {
   return (
-    <div className='grid grid-cols-1'>
+    <div className='container grid grid-cols-1'>
       {posts.map(({ slug, frontmatter }) => (
         <div
           key={slug}

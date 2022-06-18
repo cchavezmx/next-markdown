@@ -34,7 +34,7 @@ export default function Layout({ children }) {
         </div>
         {/* <a href='https://www.microsoft.com/es-es/edge?r=1'>Como instalar Microsoft Edge</a> */}
       </div>
-      <main className='container font-bold mx-auto flex-1'>{children}</main>
+      <main className='container font-bold mx-auto flex-2'>{children}</main>
     </div>
   );
 }
