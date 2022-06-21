@@ -1,0 +1,591 @@
+---
+title: 'Javascript Clase 01 - Introducción'
+metaTitle: 'introducción a javascript - clase 01'
+metaDesc: 'historia de javascript, tipos e integracion'
+author: 'cchavezmx'
+date: '2022-06-20'
+tags:
+  - nextjs
+---
+
+## Bienvenido a Javascript, el lenguaje de programación más utilizado en la web
+
+## Temario: {#temario}
+
+  - [¿Qué es Javascript?](#que-es-javascript)
+  - [¿Para que sirve Javascript?](#como-funciona)
+  - [Preparando el terreno](#preparando-el-terreno)
+    - [Glosario de conceptos](#glosario-de-conceptos)
+  - [ECMAScript](#ecmascript)
+  - [Conceptos Básicos](#conceptos-basicos)
+  - [Fundamentos de Javascript](#fundamentos-de-javascript)
+    - [Utilizando typeof()](#utilizando-typeof)
+    - [Declarando variables](#declarando-variables)
+  - [Tipo de dato primitivo numerica](#tipo-de-dato-primitivo-numerica)
+  - [Booleano](#booleano)
+  - [String](#string)
+     - [String.length](#string-length)
+     - [String.split](#string-split)
+     - [String.lastIndexOf](#array-lastindexof)
+  - [Comentarios Finales](#comentarios)
+  
+    
+* * *
+
+## ¿Qué es Javascript? {#que-es-javascript}
+
+Javascript se ha convertido en el lenguaje de programación más utilizado en la web por excelencia. es el lenguaje de programación que entieden los exploradores web y aunque existan otras tecnologías como Java, Python, C#, etc para el desarrollo de aplicaciones web, al final todos estos tienen que cambiarse a Javascript para que sea entendido por los navegadores.
+
+Javascript al combinarse con HTML y CSS nos permite crear páginas web dinámicas y interactivas. mas adelante vamos a aprender como interactuar con los archivos de css y html que vamos creando en nuestra página y entender mas o menos como funciona el lenguaje al combinarse con el html y css.
+
+
+Cosas basicas de javascript:
+
+ - Es un lenguaje de debil tipado, es decir que no es necesario definir el tipo de dato que se va a utilizar en una variable.
+ - Es un lenguaje de programación dinamica, es decir que se puede modificar el valor de una variable en tiempo de ejecución.
+ - Es un lenguaje de programación orientada a objetos, es decir que se puede crear objetos y utilizarlos en tiempo de ejecución.
+ - No debemos confundir con JAVA
+ 
+Antes de comenzar vamos a aprender los conceptos básicos de javascript. VAMOS A ELLO!!! 💪💪💪💪
+
+* * *
+
+## ¿Para que sirve Javascript? {#como-funciona}
+
+Antes que nada vamos a recordar una estructura básica de html, para esto te invito a copiar el siguiente código:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div class="item">
+    <p>Número: <span class="numero">1</span></p>
+    <p>Número: <span class="numero">2</span></p>
+    <p>Número: <span class="numero">3</span></p>
+    <p>Número: <span class="numero">4</span></p>
+    <p>Número: <span class="numero">5</span></p>
+  </div>
+</body>
+</html>
+
+```
+
+🧐 __Inpector de código__ 🧐
+¿Que vemos aqui? 🤔
+Dede arriba: tenemos el tag `<!DOCTYPE html>` que es una declaración de tipo de documento. este tag es importante para que el navegador entienda que es un documento html.
+
+- El tag `<html lang="en">` que es una declaración de idioma. ⏰ el `en` dentro del `lang="`
+este atributo sirve para defirnir el idioma que se va a utilizar en la página.
+
+
+- El tag `<head>` es una sección de la página que contiene los metatags y los scripts que se van a utilizar en la página.
+
+- El tag `<meta charset="UTF-8">` es una declaración de la codificación. Como el internet es unviersal nuesta página puede ser visitada desde otro pais que no necesariamente usan las mismas letras que nosotros, de esta forma la computadora sabe que letras usar para interpretar la información.
+
+
+- El tag `<meta name="viewport" content="width=device-width, initial-scale=1.0">` nos ayuda a definir el tamaño de la ventana de la página y el zoom que se va a utilizar.
+
+- El tag `<meta http-equiv="X-UA-Compatible" content="ie=edge">` es una declaración de compatibilidad con navegadores.
+
+- El tag `<title>Document</title>` configura el título de la página. este tag es muy importante para que los buscadores (google, Bing, etc) entiendan que es una página de una web y tenga una idea de que se trata.
+
+- El tag `<body>` es el bloque de la página que contiene el código html, todo nuestro sitio va dentro de este bloque de código.
+y es dentro de este bloque de codigo que tenemos otro bloque de código que es el `<div class="item">` es contiene una lista de numeros.
+
+```html
+    <p>Número: <span class="numero">1</span></p>
+    <p>Número: <span class="numero">2</span></p>
+    <p>Número: <span class="numero">3</span></p>
+    <p>Número: <span class="numero">4</span></p>
+    <p>Número: <span class="numero">5</span></p>
+```
+
+📌 __Nota:__ un bloque de codigo se define con el nombre del tag que estamos usando, de preferencia, un`<div>` o `<section>` o `<article>` o `<main>` estos deben estar dentro de un `<body>`. para terminar de definir el bloque de codigo, debemos cerrar el tag que estamos usando anteponiendo un `/` y al final el nombre del tag. por ejemplo: `</div>` o `</section>` o `</article>` o `</main>`
+es por esto que tambien reciben el nombre de contenedor.
+
+
+📌 __Nota:__ el bloque `<body>` es el más importante porque es el que contiene todo el código html, y es donde vamos a definir nuestro nuevo bloque de código `<scrip>` aqui definiremos el código javascript que vamos a utilizar en nuestra página.
+
+Ya que recordamos un poco de los conceptos de la sintaxis de una página html, hay que entender para que vamos o tenemos que aprender javascript. recuerdas la lista de numeros del ejemplo anterior? pues imagina que en lugar de 5 numeros, vamos a tener una lista de 10 numeros o de 500 o de 1000 numeros. tendriamos que escribir linea por linea el código html para que el navegador entienda que es una lista de numeros. y si esta lista cambia constantemente, esta es la importancia de javascript y en general de los lenguajes de programación para poder hacer tareas repetitivas, para hacer mas eficientes las tareas que se realizan en nuestra página.
+
+Antes de comenzar a aprender javascript, tenemos que endender algunos conceptos basicos de javascript.
+
+Aunque Javascript es ideal para muchos casos, es mucho más complicado aprender Javascript (o un lenguaje de programación en general) que aprender HTML o CSS, los cuales son mucho más sencillos de comprender. Antes debemos conocer varias cosas:
+
+Para aprender Javascript debemos conocer el lenguaje Javascript, pero no podremos hacerlo si no sabemos programar. Se puede aprender a programar con Javascript, pero es recomendable tener una serie de fundamentos básicos de programación antes para que no nos resulte muy duro.
+
+Para aprender a programar antes debemos saber como «trabaja una computadora. Programar no es más que decirle a una máquina que cosas debe hacer y como debe hacerlas. Eso significa que no podemos pasar por alto nada.
+
+Para darle órdenes a una máquina debemos tener claro que esas órdenes son correctas y harán lo que se supone que deben hacer. Si le indicamos a una máquina los pasos para resolver un problema, pero dichos pasos son erróneos, la máquina también hará mal el trabajo.
+
+Dicho esto, es necesario tener presente que aprender a programar es una tarea que no ocurre de un día para otro. Requiere tiempo, esfuerzo, acostumbrarse a cambiar la forma de pensar y practicar mucho.
+
+Puedes copiar un programa en segundos, pero eso no significa que lo entiendas.
+
+Puedes comprender un programa en minutos, pero eso no significa que lo puedas crear.
+
+Puedes crear un programa en horas, pero eso no significa que sepas programar.
+
+Puedes aprender a programar en semanas, pero eso no significa que no cometas errores.
+
+Puedes aprender a programar bien y sin demasiados errores en meses.
+
+Pero dominar la programación es una tarea que requiere años.
+
+recuerda hay que practicar, y tener paciencia para aprender.
+
+* * * 
+
+
+## Preparando el terreno {#preparando-el-terreno}
+
+Existen 3 herramientas que nos permiten interactuar con javascript: nodejs, un navegador web o un playground de javascript.
+para seguir aprendiendo javascript vamos a instalar RunJS, RunJs es un playground que nos permite ejecutar codigo javascript de forma sencilla.
+
+puedes descargarlo para windows 10 desde [aqui](https://github.com/lukehaas/RunJS/releases/download/v2.4.1/RunJS-Setup-2.4.1.exe).
+este programa es de pago pero cuenta con una versión gratuita.
+
+Descarga el programa e instala en tu computador.
+
+despues de instalarlo, te aperecera una ventanan como esta: 
+
+![runjs](/images/02/runjs.png)
+
+
+simplmente nos da la bienvenida a RunJS, RunJS cuenta con una ventana partida en dos partes, del lado izquierdo esta el editor de codigo, aqui vamos a poner nuestro codigo, y el lado derecho esta el resultado de ejecutar nuestro codigo.
+
+
+📌 __Nota:__ para agrandar el tamaño de letra sigue el siguiente menú: 
+![letra01](/images/02/cambiar_tamano_menu.png)
+![letra02](/images/02/cambiar_tamano_menu_02.png)
+
+
+ya que tenemos todo instalado prueba lo siguiente: en el lado izquierdo del editor de codigo escribe 
+
+``` javascript
+ console.log("Hola mundo");
+```
+y revisa que pasa del lado derecho del RunJS:
+
+🔥🔥🔥🔥 Bien hecho, si todo bien hasta aqui vamos empezar con los conceptos básicos. 🔥🔥🔥🔥
+
+> 🧠 __Para saber más:__ Antes que nada, quiero que sepas que lo que vamos a ver acontinuación son conceptos que se aplican para otros lenguajes de programacion.
+
+Te invitamos a que cada uno de los comandos que presentamos a continuacion los escribas y practiques en en RunJS
+
+ - ### console.log()
+
+el `console.log()` es una funcion que nos permite imprimir un mensaje en la consola, OJO esto solo sirve para imprimir mensajes en la consola, no tiene ningun efecto en la página web.
+
+pero no existe solo el `console.log()`, tambien existen mas variantes de `console.log()`:
+
+| Funcion           | Descripción                                                                       |
+|-------------------|-----------------------------------------------------------------------------------|
+| console.log()     | Muestra la información proporcionada en la consola Javascript.                    |
+| console.info()	  | Equivalente al anterior. Se utiliza para mensajes de información.                 |
+| console.warn()    | Muestra información de advertencia. Aparece en amarillo.                          |
+| console.error()   | Muestra información de error. Aparece en rojo.                                    |
+| console.clear()   | Limpia la consola. Equivalente a pulsar CTRL+L o escribir clear().                |
+
+
+### Glosario de conceptos:  {#glosario-de-conceptos}
+
+A lo largo del curso vamos a usar algunos conceptos que puede ser que no estes familiarizado: estos son algunos de los conceptos que vamos a usar:
+
+- __Programa:__ En programación se suele llamar «programa» a el conjunto total de código que desarrollas. En Javascript, quizás el término más utilizado es aplicación web (cuando es un desarrollo con mucha cantidad de Javascript). También se suelen generalizar utilizando términos como «script» o «código Javascript».
+
+- __Algoritmo:__ Un algoritmo es un conjunto de pasos conocidos, en un determinado orden, para conseguir realizar una tarea satisfactoriamente y lograr un objetivo.
+
+- __Comentarios:__ Los comentarios en nuestro código son fragmentos de texto o anotaciones que el navegador ignora y no repercuten en el programa. Sirven para dejar por escrito detalles importantes para el programador. De esta forma cuando volvamos al código, nos será más rápido comprenderlo. Es una buena costumbre comentar en la medida de lo posible nuestro código.
+
+- __Indentación:__ Se llama indentar a la acción de colocar espacios o tabuladores antes del código, para indicar si nos encontramos dentro de un if, de un bucle, etc... Esta práctica es muy importante y necesaria, y más adelante profundizaremos en ella.
+
+- __Variables:__ Es el nombre genérico que se le da a pequeños espacios de memoria donde guardas una información determinada, de forma muy similar a las incógnitas en matemáticas. Un programa puede tener muchas variables, y cada una de ellas tendrá un nombre, un valor y un tipo de dato. El nombre se utiliza para diferenciarlas unas de otras y hacer referencia a ellas, el valor es la información que contienen y el tipo de dato es la naturaleza de ese valor. Se llaman variables porque podemos cambiarle su valor a lo largo del programa, según necesitemos.
+
+x = 5; // nombre: x, valor: 5, tipo de dato: número
+y = "Hola"; // nombre: y, valor: Hola, tipo de dato: texto
+Manz = "me"; // nombre: Manz, valor: me, tipo de dato: texto
+Constantes: Es el mismo concepto de una variable, salvo que en este caso, la información que contiene es siempre la misma (no puede variar).
+
+- __Funciones:__ Cuando comenzamos a programar, nuestro código se va haciendo cada vez más y más grande, por lo que hay que buscar formas de organizarlo y mantenerlo lo más simple posible. Las funciones son agrupaciones de código que, entre otras cosas, evitan que tengamos que escribir varias veces lo mismo en nuestro código. Una función contendrá una o mas acciones a realizar y cada vez que ejecutemos una función, se realizarán todas ellas.
+
+- __Parámetros__: Es el nombre que reciben las variables que se le pasan a las funciones. Muchas veces también se les denomina argumentos.
+
+- __Bucles__: Cuando estamos programando, muchas veces necesitaremos realizar tareas repetitivas. Una de las ventajas de la programación es que permite automatizar acciones y no es necesario hacerlas varias veces. Los bucles permiten indicar el número de veces que se repetirá una acción. De esta forma, sólo la escribimos una vez en nuestro código, y simplemente indicamos el número de veces que queremos que se repita.
+
+- __Iteración__: Cuando el programa está en un bucle repitiendo varias veces la misma tarea, cada una de esas repeticiones se denomina iteración.
+
+- __Librería__: Muchas veces, desarrollamos código que resuelve tareas o problemas que, posteriormente, querremos reutilizar en otros programas. Cuando eso ocurre, en Javascript se suele empaquetar el código en lo que se llaman librerías, que no es más que código listo para que otros programadores puedan utilizarlo fácilmente en sus programas y beneficiarse de las tareas que resuelven de forma muy sencilla.
+
+* * *
+
+## ECMAScript: {#ecmascript}
+
+ECMAScript es la especificación donde se mencionan todos los detalles de cómo debe funcionar y comportarse Javascript en un navegador. De esta forma, los diferentes navegadores (Chrome, Firefox, Opera, Edge, Safari...) saben como deben desarrollar los motores de Javascript para que cualquier código o programa funcione exactamente igual, independientemente del navegador que se utilice.
+
+ECMAScript suele venir acompañado de un número que indica la versión o revisión de la que hablamos (algo similar a las versiones de un programa). En cada nueva versión de ECMAScript, se modifican detalles sobre Javascript y/o se añaden nuevas funcionalidades, manteniendo Javascript vivo y con novedades que lo hacen un lenguaje de programación moderno y cada vez mejor preparado para utilizar en el día a día.
+
+Teniendo esto en cuenta, debemos saber que los navegadores web intentan cumplir la especificación ECMAScript al máximo nivel, pero no todos ellos lo consiguen. Por lo tanto, pueden existir ciertas discrepancias. Por ejemplo, pueden existir navegadores que cumplan la especificación ECMAScript 6 al 80% y otros que sólo la cumplan al 60%. Esto significa que pueden haber características que no funcionen en un navegador específico (y en otros sí).
+
+Además, todo esto va cambiando a medida que se van lanzando nuevas versiones de los navegadores web, donde su compatibilidad ECMAScript suele aumentar
+
+El grupo encargador llevar el control de la especificación ECMAScript es la [TEC39](https://github.com/tc39). en su página de github se encuentran los que vendra en el futuro y que metodos o funciones fueron descartadas y por que.
+
+Esto es imporante de entender por que en los trabajos piden que semas javascritp usando ECMAScript 6. y es necesario saber un poco de esto. 
+
+* * *
+
+## Conceptos Básicos: {#conceptos-basicos}
+
+### Tipos de cometarios: {#tipos-comentarios}
+
+En Javascript existen dos tipos de comentarios: los comentarios de una sola línea y los comentarios de múltiples líneas.
+
+El primero de ellos se caracteriza porque comienza con `//` y sólo comenta la linea actual desde donde se escribe.
+El segundo tipo se utiliza para hacer comentarios extensos que ocuparán varias líneas. Comienza por `/*` y comentará todo el texto que escribamos hasta que cerremos el comentario con un `*/`.
+
+practicalo en RunJS: 
+
+```javascript
+
+// Comentarios cortos de una sola línea. Suelen explicar la línea siguiente.
+var a = 1;
+
+var x = 45; // También se utilizan al final de una línea.
+
+/* Por otro lado, existen los comentarios múltiples de varias líneas consecutivas.
+   Suelen utilizarse para explicaciones largas que requieren bastante
+   espacio porque se mencionan gran cantidad de cosas :-) */
+
+```
+
+> 💪 Escribiendo en RunJS linea por linea y observando el resultado del lado derecho, ¿notas la diferencia de codigo comentando y no comentando?.
+
+¿Pero debo comentar todo? 
+
+Comentar código también es un arte que debe ser aprendido, ya que al principio es muy fácil cometer errores y comentar en exceso o no ser concreto al comentar. No suele ser grave porque los comentarios no afectan al funcionamiento del programa, pero en equipos de trabajo donde hay varios programadores suele ser molesto para los programadores con más experiencia.
+
+por ejemplo:
+
+```javascript
+// Declaramos una variable llamada x
+  var x = 50;
+```
+
+Estos comentarios pueden ser útiles para el programador novato que comienza a programar y necesita recordar lo que hace porque aún no conoce bien la sintaxis de programación, de hecho muchos de los comentarios del tema de introducción son así (para ayudar al programador que recién empieza a programar), pero el objetivo real de un comentario no debe ser recordar que hace una línea de código, sino conocer porque lo estamos realizando o que representa lo que estamos haciendo:
+
+```javascript
+var x = 50; // Establecemos el precio del producto
+
+console.log(x);
+
+x = x * 0.5; // Lo rebajamos al 50%
+
+```
+
+Sin embargo, hay una opción todavía mejor que conecta con uno de los temas que veremos más adelante. Poner nombres descriptivos a las variables debería ser algo obligatorio a lo que acostumbrarnos, puesto que puede ahorrarnos muchos comentarios y tiempo, simplificar el código considerablemente y hacerlo mucho más legible y con menos ambigüedades:
+
+  
+```javascript
+var precio = 50;
+
+console.log(precio);
+
+var oferta = precio * 0.5;
+
+```
+
+En este fragmento de código, no utilizamos comentarios porque el nombre de las variables ya ayuda a entender el código y lo hace autoexplicativo. De esta forma, generamos menos código (e incluso comentarios) y se entiende igualmente. En los siguientes temas, veremos una serie de consejos a la hora de nombrar variables, funciones u otros elementos dentro de la programación.
+
+📌 __Nota__ hasta ahorita solo hemos visto comentarios, no es necesario hasta ahora que sepas que hacen las demas lineas de codigo. solo es necesario que sepas la sintaxis de comentarios, y que los comentarios son una forma de documentar tu código.
+
+
+
+## Fundamentos de Javascript {#fundamentos-de-javascript}
+
+En Javascript disponemos de los siguientes tipos de datos:
+
+
+| Tipo de dato | Descripción | Ejemplo básico |
+| ------------ | ------------ | -------------- |
+| number | Valor numérico (enteros, decimales, etc...) | 42 |
+| string | Valor de texto (cadenas de texto, carácteres, etc...) | 'MZ' |
+| boolean | Valor booleano (valores verdadero o falso) | true |
+| undefined | Valor sin definir (variable sin inicializar) | undefined |
+| function | Función (función guardada en una variable) | function() {} |
+| object | Objeto (estructura más compleja) | {} |
+
+Para empezar, nos centraremos en los tres primeros, denominados tipos de datos primitivos, y en los temas siguientes veremos detalles sobre los siguientes.
+
+Para saber que tipo de dato tiene una variable, debemos observar que valor le hemos dado. Si es un valor numérico, será de tipo number. Si es un valor de texto, será de tipo string, si es verdadero o falso, será de tipo booleano. Veamos un ejemplo en el que identificaremos que tipo de dato tiene cada variable:
+
+  
+```javascript
+
+  var s = "Hola, me llamo Manz"; // s, de string
+  var n = 42; // n, de número
+  var b = true; // b, de booleano
+  var u; // u, de undefined
+
+```
+
+Como se puede ver, en este ejemplo, es muy sencillo saber que tipos de datos tienen cada variable.
+
+
+### Utilizando typeof() {#utilizando-typeof}
+
+Si tenemos dudas, podemos utilizar la función typeof, que nos devuelve el tipo de dato de la variable que le pasemos por parámetro. Veamos que nos devuelve typeof() sobre las variables del ejemplo anterior:
+
+    
+```javascript
+  console.log(typeof s); // "string"
+  console.log(typeof n); // "number"
+  console.log(typeof b); // "boolean"
+  console.log(typeof u); // "undefined
+
+```
+
+> 📌 __Nota__: La función typeof() solo sirve para variables con tipos de datos básicos o primitivos.
+
+### Declarando variables {#declarando-variables}
+
+En los ejemplos anteriores de codigo Javascript, hemos utilizado la palabra reservada `var` para declarar variables. pero este tiene muchos errores y no es una buena práctica. actualmente En las versiones modernas de Javascript (ES6 o ECMAScript 2015) o posteriores, se introduce la palabra clave let en sustitución de var. Con ella, en lugar de utilizar los ámbitos globales y a nivel de función (var), utilizamos los ámbitos clásicos de programación: ámbito global y ámbito local.
+ 
+Siempre que sea posible se debería utilizar let y const (ver a continuación), en lugar de var. Declarar variables mediante var se recomienda en fases de aprendizaje o en el caso de que se quiera mantener compatibilidad con navegadores muy antiguos utilizando ECMAScript 5, sin embargo, hay estrategias mejores a seguir que utilizar var en la actualidad.
+
+apartir de este vamos a dejar de usar var y empezar a usar let y const.
+
+> 📌 __Nota:__ conforme vayamos avanzando en el curso, veremos cómo utilizar let y const, no te preocupes por el momento. También, veremos que es esto de ámbitos globales y locales
+
+
+### Tipo de dato primitivo: numerica {#tipo-de-dato-primitivo-numerica}
+
+En Javascript, los números son uno de los tipos de datos básicos (tipos primitivos) que para crearlos, simplemente basta con escribirlos. No obstante, en Javascript todo son objetos, como veremos más adelante, y también se pueden declarar como si fueran un objeto:
+
+```javascript
+
+// Literales
+const n1 = 4;
+const n2 = 15.8;
+
+``` 
+
+📌 __Nota:__ n1 es un número un número entero (integer) y n2 es un número con decimales o un número flotante (float).
+
+Pero no todo es tan sencillo. En Javascript, podemos recibir un número como un string, por ejemplo:
+
+
+```javascript
+
+// Literales
+const ejemploInteger = "4";
+const ejemploFloat = "15.8"'
+
+``` 
+
+💪 __Ejercicio__: usa typeof para ver que tipo de dato es ejemploInteger y ejemploFloat del ejemplo anterior.
+
+
+Este forma de recibir un número como un string puede traer muchas complicaciones. en javascript, tenemos una serie de funciones que nos permiten convertir un string en un número. pero antes veamos otro concepto. 
+
+
+### Booleano {#booleano}
+
+Un valor booleano es un valor que puede ser verdadero o falso de la siguiente forma:
+
+```javascript 
+
+  let b = true;
+  let c = false;
+
+```
+
+estos tipos de variables nos servirán para definir condiciones, como si fuera un if o un switch que veremos mas adelante, en estructuras de control.
+
+### String {#string}
+
+Los  son tipos de datos primitivos, Para englobar los textos, se pueden utilizar comillas simples `'`, comillas dobles `"` o backticks ` (ver más adelante).
+
+> 📌 __Nota__: Aunque es posible utilizar comillas simples o comillas dobles en los , se recomienda decantarse por uno de los dos estilos y no mezclarlos. Muchas empresas o equipos de desarrollo tienen guías de estilos para delimitar cuál utilizar.
+
+```javascript
+// Literales
+let texto1 = "¡Hola a todos!";
+let texto2 = "Otro mensaje de texto";
+
+```
+
+Pero para las strings tenemos mas metodos que podemos utilizar:
+
+  - `.length`: nos devuelve el número de caracteres que tiene la string
+  - `.charAt(index)`: nos devuelve el caracter que se encuentra en la posición indicada
+  - `.indexOf(caracter)`: nos devuelve el índice del caracter indicado
+  - `.lastIndexOf(caracter)`: nos devuelve el índice del caracter indicado, pero desde el final
+  - `.slice(inicio, fin)`: nos devuelve una substring de la string, desde el índice inicio hasta el índice fin
+  - `.substring(inicio, fin)`: nos devuelve una substring de la string, desde el índice inicio hasta el índice fin
+  - `.split(separador)`: nos devuelve un array con las substrings que se separan por el separador indicado
+  - `.replace(regex, nuevoValor)`: reemplaza todas las ocurrencias de una expresión regular por un valor nuevo
+  - `.match(regex)`: devuelve un array con las coincidencias de una expresión regular
+  - `.search(regex)`: devuelve el índice de la primera coincidencia de una expresión regular
+  - `.trim()`: elimina los espacios en blanco al inicio y al final de la string
+  - `.toUpperCase()`: convierte la string a mayúsculas
+  - `.toLowerCase()`: convierte la string a minúsculas
+  - `.charCodeAt(index)`: devuelve el código ASCII del caracter en la posición indicada
+  - `.concat(string)`: concatena la string con otra string
+  - `.includes(string)`: devuelve true si la string incluye la string indicada
+  - `.startsWith(string)`: devuelve true si la string comienza con la string indicada
+  - `.endsWith(string)`: devuelve true si la string termina con la string indicada
+
+no te preocupes por el momento, veremos como utilizarlas mas adelante conforme aumentemos la dificultad de los ejercicios, por el momento solo te mostraremos los mas basicos.
+
+
+### String.length {#string-length}
+
+Veamos un ejemplo: 
+
+```javascript
+
+  let nombre = "Juan Pablo";
+  console.log(nombre.length);
+
+```
+
+> ***Pruebalo en RunJS para ver el resultado***
+
+Length es un metodo de la clase String que nos devuelve el numero de caracteres que tiene la string.
+
+
+### String.split: {#string-split}
+
+Veamos un ejemplo:
+  
+  ```javascript 
+    let nombre = "Juan Pablo";
+    console.log(nombre.split(" "));
+  ```
+
+  > ***Pruebalo en RunJS para ver el resultado***
+
+  split es un metodo de la clase String que nos devuelve un array con las palabras que se separan por el separador indicado. en este caso el sapador es un espacio en blanco. `" "` comillas dobles siguidas de un espacio en blanco.
+  (recuerda que es indistinto si utilizamos comillas simples o comillas dobles)
+
+  > __📌 Nota:__ Aqui hay otro concepto que uan no hemos visto, el array, el array se define por medio de llaves `[]`. y sirve para guardar una lista de elementos. mas adelante veremos como utilizarlo.
+
+
+### - String.lastIndexOf(caracter)`: {#array-lastIndexOf}
+
+  Veamos un ejemplo:
+
+  ```javascript 
+    let nombre = "Juan Pablo";
+    console.log(nombre.lastIndexOf("o"));
+  ```
+
+  Y un ejemplo mas:
+
+  ```javascript 
+    let nombre = "Juan Pablo";
+    console.log(nombre.lastIndexOf("J"));
+  ```
+
+  > ***Pruebalo en RunJS para ver el resultado***
+  
+  lastIndexOf es un metodo de la clase String que nos devuelve el índice del caracter indicado, entendemos como el índice a la posición del caracter indicado, empezando desde cero. 
+
+  Una de las curiosidades que tiene este metodo es que si no encuentra el caracter indicado, devuelve -1.
+
+  > __📌 Nota:__ practica el ejercicio para ver como funciona el metodo lastIndexOf. y no tengas dudas 
+
+  hasta aqui dejamos los ejercicios de strings, veamos ahora el siguiente tema.
+
+## Concatenar strings {#concatenar-strings}
+
+Existen 3 formas de concatenar strings: una que es las mas ineficiente, que usa el metodo concat, asi que de esta no hablaremos por que hay mejores formas de concatenar strings. 
+
+Entiendas con contantenar con la forma de unir cadenas de texto.
+
+veamos la primera forma de concatenar con el simbolo de `+`:
+
+  ```javascript
+
+    let nombre = "Juan Pablo";
+    let apellido = "Gonzalez";
+    let nombreCompleto = nombre + " " + apellido;
+    console.log(nombreCompleto);
+
+  ```
+
+  > ***Pruebalo en RunJS para ver el resultado***
+
+  Como puedes notar al usar el simbolo de `+` cuando concatenamos dos strings, el problema es que al contanar el string de nombre con el de apellido no inserta un espacio entre ellos (como deben de escribirse los nombres completos). 
+  para esto que tenemos que utilizar el simbolo de `+` seguido de un espacio en blanco de definido dentro de las comillas dobles `" "` añadir otro simbolo de `+` y el string de apellido para poder formar el nombre completo.
+
+  Este es un problema ya que si queremos concatenar varios strings, podemos utilizar la combinacion de simbolo de `+` espacio en blanco `" "` simbolo de `+` para concatenar todos los strings que queramos.
+
+  Para esto tenemos una forma mas dificil de hacerlo, el template string.
+
+  ```javascript
+    let nombre = "Juan Pablo";
+    let apellido = "Gonzalez";
+    let nombreCompleto = `${nombre} ${apellido}`;
+    console.log(nombreCompleto);
+  ```
+
+  > ***Pruebalo en RunJS para ver el resultado***
+
+  El template estring es una forma mas "natura" de concatenar strings, es decir, que no necesita el simbolo de `+` para concatenar strings, pero si para poder concatenar varios strings como si estuvieramos escribiendo normalmente, solo que las variables deben de estar entre esta combinacion de caracateres `${}`. 
+
+  > __📌 Nota:__ practica el ejercicio para ver como funciona el template string. y no tengas dudas
+
+  Esta ultima es la forma mas moderna de concatenar strings y es la mas eficiente, por lo tanto es la que utilizaremos en el futuro.
+
+  * * * 
+
+ ## Comentarios Finales {#comentarios}
+
+  Tal vez este tema ha sido bastante difícil para ti, pero no te preocupes, si los conceptos teoricos no quedan de todo claros con el tiempo y mucha practica estos temas empiezan a quedar mas claro. 
+
+  Lo que si es importante es que tengas muy claro los tipos de datos, los metodos de string y concatenar strings por que es algo que vamos a necessitar mas adelante.
+
+  Es importante que no tengas dudas con estos temas ya que esto es como una bola de nieve, se empieza a hacer mas y mas grande y tienes que aprender muchos conceptos, para que ya que tengas estos datos en la mente, sirvan como herramientas para poder resolver problemas relacionadas con codigo. 
+
+  aun estamos lejos de ensamblar nuestas piezas html, css, javascript. pero quiero que tengas en mente que esto del desarrollo no es una carrera de velocidad si no de resistencia. es una carrera de fondo. no te desanimes y practica todos los dias. 
+
+
+  Ahora para seguir con el siguiente tema, es importante que te pongas a prueba con los siguientes ejercicios:
+
+  🏆 __Ponte a prueba:__ investiga quién y en cuantos dias se invento javascript.
+
+  🏆 __Ponte a prueba:__ 
+  con los siguientes ejercicios. 
+
+  Escribe tus propios ejemplos:
+
+  Recuerdas la tabla de tipos de datos primitivos en javascript de la sección [Fundamentos de Javascript](#fundamentos-de-javascript).¿Podrias hacer ejercicios con estos tipos de datos?.
+
+  🏆 __Ponte a prueba:__
+  ¿Que es una iteración?
+
+  manda todos tus ejercicios a carlos@devf.mx mucha suerte.
+  Recuerda que mientras mas ejercicios tengas, mas probabilidades tienes de que te desarrolles en javascript.
+
+
+  * * *
+
+  FIN 
+  REGRSAR. [REGRESAR AL TEMARIO](#temario)
+
+
+
+
+  
+
+
+
+

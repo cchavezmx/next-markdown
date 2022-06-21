@@ -127,7 +127,7 @@ PS C:\Users\user_name> dir
 
    Una vez descargado el programa, damos doble click en el archivo que se descargo,
 
-  ![ventana de permisos de windows](/images/gitInstalador.jpg)
+  ![ventana de permisos de windows](/images/01/gitInstalador.jpg)
    
    Al hacer esto se abrirá una serie de ventanas a manera de guia, que nos permitirá configurarlo. 
    nosotros también te guiaremos en este paso a paso en la instalación y te explicaremos algunas cosas.
@@ -136,20 +136,20 @@ PS C:\Users\user_name> dir
 
   ### Primera ventana: 
 
-  ![primera ventana de instalacion de Git](/images/git_instal_01.jpg)
+  ![primera ventana de instalacion de Git](/images/01/git_instal_01.jpg)
 
    📌 __Nota:__ Ventana de seguridad de windows, nos pregunta si estamos de acuerdo en instalar el programa, damos click en SI para continuar.
 
 
   ### Segunda ventana: 
 
-  ![segunda ventana de instalacion de Git](/images/git_instal_02.jpg)
+  ![segunda ventana de instalacion de Git](/images/01/git_instal_02.jpg)
 
    📌 __Nota:__ Todos los programas tienen sus licencias de uso, debemos estar de acuerdo con sus terminos y condiciones si queremos que instale su programa, nosotros solamente le damos __Next__, y si quieres, podrias leerlo, pero creo que nadie nunca creo que hace eso 😁.
 
   ### Tercera ventana: 
 
-  ![tercera ventana de instalacion de Git](/images/git-instalacion-carpeta_install.jpg)
+  ![tercera ventana de instalacion de Git](/images/01/git-instalacion-carpeta_install.jpg)
 
   📌 __Nota:__ esta ventana nos informa en que carpeta de nuestro sistema operativo se van a instalar.
   damos click en __Next__ para continuar.
@@ -157,7 +157,7 @@ PS C:\Users\user_name> dir
 
   ### Cuarta ventana:
 
-  ![cuarta ventana de instalacion de Git](/images/git_instal_03.jpg)
+  ![cuarta ventana de instalacion de Git](/images/01/git_instal_03.jpg)
 
    📌 __Nota:__ esta ventana es la más interesante, en ella definimos que queremos que se instale o que acciones queremos que se habiliten asegurate de marcar las opciones que están te marcamos en la imagen.
 
@@ -167,21 +167,21 @@ PS C:\Users\user_name> dir
   Damos Next y nos lleva a una quinta ventana
   ### Quinta ventana:
 
-  ![quinta ventana de instalacion de Git](/images/git-instalacion-menu_inicio.png)
+  ![quinta ventana de instalacion de Git](/images/01/git-instalacion-menu_inicio.png)
 
    📌 __Nota:__ esta pantalla indica el nombre de la carpeta en el menú de Inicio: en otras palabras en que parte del menú de windows podemos encontrar el acceso al programa, pero si marcaste las casillas que te sugremimos en el paso anterior el icono de git aparecera en el escritorio, asi que simplemente damos Next para continuar y pasar a la siguiente ventana.
 
 
   ### Sexta ventana:
 
-  ![sexta ventana de instalacion de Git](/images/git-instalacion-visual.png)
+  ![sexta ventana de instalacion de Git](/images/01/git-instalacion-visual.png)
 
    📌 __Nota:__ Ventana de configuración de editor, Despliegue la caja de lista para elegir otro editor. se recomienda elegir Visual Studio Code.
 
 
   ### Séptima ventana:
 
-  ![séptima ventana de instalacion de Git](/images/git-instalacion-main-slave.png)
+  ![séptima ventana de instalacion de Git](/images/01/git-instalacion-main-slave.png)
 
    📌 __Nota:__ La siguiente pantalla permite elegir el nombre de la rama principal de los nuevos repositorios. Tradicionalmente la rama principal recibía el nombre de master, pero desde hace años este término se ha visto envuelto en polémica ya que hay personas que lo consideran racista pero ya que muchos proyectos están modificando la denominación de master. 
    aunque Git todavía no ha decidido el cambio, pero GitHub ha empezado a utilizar el término main, es el que elegiremos aquí...
@@ -190,7 +190,7 @@ PS C:\Users\user_name> dir
 
   ### Octava ventana:
 
-  ![séptima ventana de instalacion de Git](/images/git-instalacion-PATH.png)
+  ![séptima ventana de instalacion de Git](/images/01/git-instalacion-PATH.png)
 
    📌 __Nota:__ La siguiente pantalla permite elegir el tipo de terminal desde las que se podrá usar Git:
    nos aseguramos que elegimos la opción recomendada (Recommended), y damos Next para continuar.
@@ -207,17 +207,17 @@ PS C:\Users\user_name> dir
   * * *
 
   La siguiente pantalla permite elegir el ejecutable SSH
-  ![ventanas de configuracion de git](/images/git-many01.jpg)
+  ![ventanas de configuracion de git](/images/01/git-many01.jpg)
   __Damos Clic en Next__ para continuar.
 
   * * *
   La siguiente pantalla permite elegir la biblioteca SSL/TLS
-  ![ventanas de configuracion de git](/images/git-many02.jpg)
+  ![ventanas de configuracion de git](/images/01/git-many02.jpg)
   __Damos Clic en Next__ para continuar.
 
   * * *
   La siguiente pantalla permite elegir el carácter de final de línea:
-  ![ventanas de configuracion de git](/images/git-many03.jpg)
+  ![ventanas de configuracion de git](/images/01/git-many03.jpg)
   __Damos Clic en Next__ para continuar.
 
   * * *
@@ -225,23 +225,23 @@ PS C:\Users\user_name> dir
   🚨🚨🚨🚨 IMPORTANTE!!! La siguiente pantalla permite elegir el tipo de terminal de Git
   asegurete de marcar la opcion que marcamos en la siguiente imagen: 🚨🚨🚨🚨
 
-  ![ventanas de configuracion de git](/images/git-many04.jpg)
+  ![ventanas de configuracion de git](/images/01/git-many04.jpg)
   __Damos Clic en Next__ para continuar.
 
   * * *
   La siguiente pantalla permite elegir el comportamiento de la orden "git pull":
-  ![ventanas de configuracion de git](/images/git-many05.jpg)
+  ![ventanas de configuracion de git](/images/01/git-many05.jpg)
   __Damos Clic en Next__ para continuar.
 
   * * *
 
   La siguiente pantalla permite elegir el gestor de credenciales:
-  ![ventanas de configuracion de git](/images/git-many06.jpg)
+  ![ventanas de configuracion de git](/images/01/git-many06.jpg)
   __Damos Clic en Next__ para continuar.
 
   * * *
   La siguiente pantalla permite elegir algunas características experimentales (en algunas versiones no aparece esta pantalla):
-  ![ventanas de configuracion de git](/images/git-many07.jpg)
+  ![ventanas de configuracion de git](/images/01/git-many07.jpg)
   __Damos Clic en Next__ para continuar.
 
   > Como se comentaba anteriormente, en la siguiente pantalla puede aparecer o no, lo importante es que darnos cuenta que ahora el boton de Next cambio el nombre a __Install__.
@@ -251,10 +251,10 @@ PS C:\Users\user_name> dir
   ### Proceso de instalación  y final:
 
   La siguiente pantalla nos muestra el proceso de instalación.
-  ![proceso de instalación](/images/git_instal_06.jpg)
+  ![proceso de instalación](/images/01/git_instal_06.jpg)
 
   y finalmente la pantalla de finalización.
-  ![proceso de instalación](/images/git-instalacion-final.png)
+  ![proceso de instalación](/images/01/git-instalacion-final.png)
 
    📌 __Nota:__ LLegamos al final de Wizard
 
@@ -263,7 +263,7 @@ PS C:\Users\user_name> dir
 
    Se abrira una ventana del explorador de internet con las notas de la aplicación, puedemos cerrarla.
 
-   ![proceso de instalación](/images/release_notes_git.png)
+   ![proceso de instalación](/images/01/release_notes_git.png)
 
    🥳🥳🥳🥳🥳🥳🥳🥳🥳 Felicidades, ya tenemos Git instalado en nuestro sistema operativo y es compatible con cmd o powershell de windows, te recomendamos reinicar el equipo para poder trabajar con Git en la terminal de windows.  🥳🥳🥳🥳🥳🥳🥳🥳
 
@@ -342,28 +342,28 @@ PS C:\Users\user_name> dir
 
    Ahora debemos de tener abierto Visual Studio Code pero esta vacio, hagamos un archivo: 
 
-  ![visual studio code](/images/visual_big.jpg)
+  ![visual studio code](/images/01/visual_big.jpg)
 
   - Ubica el menu de archivos del Visual Studio Code, haga click en el icono de un archivo y seleccione __`New File`__.
 
-  ![visual studio code](/images/crearnuevo.jpg)
+  ![visual studio code](/images/01/crearnuevo.jpg)
 
   📌 __Nota:__ no encuentras el icono archivo nuevo, pon tu mouse sobre el nombre del proyecto y se abrira un menu de opciones.
  
   - una vez que hayas seleccionado el boton de __`New File`__, se abrira una ventana de diálogo, en el podemos escribir el nombre del archivo. Ponemos __`README.md`__ y hacemos un ENTER con el teclado.
 
-  ![visual studio code](/images/nuevo_archivo.jpg)
+  ![visual studio code](/images/01/nuevo_archivo.jpg)
 
   - Ahora fiajte que se abrio el archivo que acabamos de crear en una nueva pestaña en Visual Studio Code. este es nuestro archivo __README.md__ agregemos una linea de texto:
 
-  ![visual studio code](/images/nuevo_README.jpg)
+  ![visual studio code](/images/01/nuevo_README.jpg)
 
   - Ya que añadimos esta linea guardemos con la combinación de teclas __`Ctrl+S`__.
 
 
   📌 __Nota:__ Fijate que al guardar el archivo se quito el puntito en la pestaña, este es un indicador, cuando modificamos el archivo, el puntito se activa, y cuando lo guardamos, se quita.
 
-  ![visual studio code](/images/guardar_status.jpg)
+  ![visual studio code](/images/01/guardar_status.jpg)
 
   Felicidades!!! 🥳🥳, ya tenemos un repositorio local creado, un un archivo __README.md__ y configurado en poweshell pero... te preguntaras cual es la magia de Git... 🤔 ¿cúal es la diferencia entre Git y GitHub? o ¿Que es lo que conseguimos con Git? 🤔
   ¿Para que sirve y para que usamos Git? 🤔
