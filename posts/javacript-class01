@@ -36,8 +36,7 @@ tags:
 
 Javascript se ha convertido en el lenguaje de programación más utilizado en la web por excelencia. es el lenguaje de programación que entieden los exploradores web y aunque existan otras tecnologías como Java, Python, C#, etc para el desarrollo de aplicaciones web, al final todos estos tienen que cambiarse a Javascript para que sea entendido por los navegadores.
 
-Javascript al combinarse con HTML y CSS nos permite crear páginas web dinámicas y interactivas. mas adelante vamos a aprender como interactuar con los archivos de css y html que vamos creando en nuestra página y entender mas o menos como funciona el lenguaje al combinarse con el html y css.
-
+Javascript al combinarse con HTML y CSS nos permite crear páginas web dinámicas e interactivas. mas adelante vamos a aprender como interactuar con los archivos de css y html que vamos creando en nuestra página y entender el funcionamiento del lenguaje al combinarse con el html y css.
 
 Cosas basicas de javascript:
 
