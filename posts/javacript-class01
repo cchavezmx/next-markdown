@@ -207,10 +207,14 @@ A lo largo del curso vamos a usar algunos conceptos que puede ser que no estes f
 
 - __Variables:__ Es el nombre genérico que se le da a pequeños espacios de memoria donde guardas una información determinada, de forma muy similar a las incógnitas en matemáticas. Un programa puede tener muchas variables, y cada una de ellas tendrá un nombre, un valor y un tipo de dato. El nombre se utiliza para diferenciarlas unas de otras y hacer referencia a ellas, el valor es la información que contienen y el tipo de dato es la naturaleza de ese valor. Se llaman variables porque podemos cambiarle su valor a lo largo del programa, según necesitemos.
 
-x = 5; // nombre: x, valor: 5, tipo de dato: número
-y = "Hola"; // nombre: y, valor: Hola, tipo de dato: texto
-Manz = "me"; // nombre: Manz, valor: me, tipo de dato: texto
-Constantes: Es el mismo concepto de una variable, salvo que en este caso, la información que contiene es siempre la misma (no puede variar).
+``` javascript
+
+  var x = 5; // nombre: x, valor: 5, tipo de dato: número
+  var y = "Hola"; // nombre: y, valor: Hola, tipo de dato: texto
+  var Manz = "me"; // nombre: Manz, valor: me, tipo de dato: texto
+
+```
+- __Constantes:__ Es el mismo concepto de una variable, salvo que en este caso, la información que contiene es siempre la misma (no puede variar).
 
 - __Funciones:__ Cuando comenzamos a programar, nuestro código se va haciendo cada vez más y más grande, por lo que hay que buscar formas de organizarlo y mantenerlo lo más simple posible. Las funciones son agrupaciones de código que, entre otras cosas, evitan que tengamos que escribir varias veces lo mismo en nuestro código. Una función contendrá una o mas acciones a realizar y cada vez que ejecutemos una función, se realizarán todas ellas.
 
