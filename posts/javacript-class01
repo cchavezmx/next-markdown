@@ -338,7 +338,13 @@ Para saber que tipo de dato tiene una variable, debemos observar que valor le he
 
 ```
 
-Como se puede ver, en este ejemplo, es muy sencillo saber que tipos de datos tienen cada variable.
+📖 __explicación__: 
+ - la variable `var s` tiene un valor de texto, por que es una cadena de texto.
+ - la variable `var n` tiene un valor numérico, por que es un número.
+ - la variable `var b` tiene un valor booleano, ya que es verdadero o falso.
+ - la variable `var u` no tiene un valor, por lo que es de tipo undefined, mas adelante observaremos que este tipo de dato es un objeto muy importante en javascript.
+
+Como se puede ver, en este ejemplo, es muy sencillo saber que tipos de datos tienen cada variable, y es muy importante que sepas distiguir entre los tipos de datos.
 
 
 ### Utilizando typeof() {#utilizando-typeof}
@@ -445,7 +451,7 @@ Pero para las strings tenemos mas metodos que podemos utilizar:
   - `.startsWith(string)`: devuelve true si la string comienza con la string indicada
   - `.endsWith(string)`: devuelve true si la string termina con la string indicada
 
-no te preocupes por el momento, veremos como utilizarlas mas adelante conforme aumentemos la dificultad de los ejercicios, por el momento solo te mostraremos los mas basicos.
+no te preocupes por el momento si no entiendes todos estos metodos, mas adelante en ejercicios veremos como utilizarlas, por el momento solo te mostraremos los mas basicos y mas importantes.
 
 
 ### String.length {#string-length}
