@@ -77,7 +77,7 @@ Antes que nada vamos a recordar una estructura básica de html, para esto te inv
 
 🧐 __Inpector de código__ 🧐
 ¿Que vemos aqui? 🤔
-Dede arriba: tenemos el tag `<!DOCTYPE html>` que es una declaración de tipo de documento. este tag es importante para que el navegador entienda que es un documento html.
+Desde arriba: tenemos el tag `<!DOCTYPE html>` que es una declaración de tipo de documento. este tag es importante para que el navegador entienda que es un documento html.
 
 - El tag `<html lang="en">` que es una declaración de idioma. ⏰ el `en` dentro del `lang="`
 este atributo sirve para defirnir el idioma que se va a utilizar en la página.
@@ -95,7 +95,7 @@ este atributo sirve para defirnir el idioma que se va a utilizar en la página.
 - El tag `<title>Document</title>` configura el título de la página. este tag es muy importante para que los buscadores (google, Bing, etc) entiendan que es una página de una web y tenga una idea de que se trata.
 
 - El tag `<body>` es el bloque de la página que contiene el código html, todo nuestro sitio va dentro de este bloque de código.
-y es dentro de este bloque de codigo que tenemos otro bloque de código que es el `<div class="item">` es contiene una lista de numeros.
+y es dentro de este bloque de código que tenemos otro bloque de código que es el `<div class="item">` esta contiene una lista de numeros.
 
 ```html
     <p>Número: <span class="numero">1</span></p>
@@ -105,13 +105,13 @@ y es dentro de este bloque de codigo que tenemos otro bloque de código que es e
     <p>Número: <span class="numero">5</span></p>
 ```
 
-📌 __Nota:__ un bloque de codigo se define con el nombre del tag que estamos usando, de preferencia, un`<div>` o `<section>` o `<article>` o `<main>` estos deben estar dentro de un `<body>`. para terminar de definir el bloque de codigo, debemos cerrar el tag que estamos usando anteponiendo un `/` y al final el nombre del tag. por ejemplo: `</div>` o `</section>` o `</article>` o `</main>`
+📌 __Nota:__ un bloque de código se define con el nombre del tag que estamos usando, de preferencia, un`<div>` o `<section>` o `<article>` o `<main>` estos deben estar dentro de un `<body>`. para terminar de definir el bloque de código, debemos cerrar el tag que estamos usando anteponiendo un `/` y al final el nombre del tag. por ejemplo: `</div>` o `</section>` o `</article>` o `</main>`
 es por esto que tambien reciben el nombre de contenedor.
 
 
 📌 __Nota:__ el bloque `<body>` es el más importante porque es el que contiene todo el código html, y es donde vamos a definir nuestro nuevo bloque de código `<scrip>` aqui definiremos el código javascript que vamos a utilizar en nuestra página.
 
-Ya que recordamos un poco de los conceptos de la sintaxis de una página html, hay que entender para que vamos o tenemos que aprender javascript. recuerdas la lista de numeros del ejemplo anterior? pues imagina que en lugar de 5 numeros, vamos a tener una lista de 10 numeros o de 500 o de 1000 numeros. tendriamos que escribir linea por linea el código html para que el navegador entienda que es una lista de numeros. y si esta lista cambia constantemente, esta es la importancia de javascript y en general de los lenguajes de programación para poder hacer tareas repetitivas, para hacer mas eficientes las tareas que se realizan en nuestra página.
+Ya que recordamos un poco de los conceptos de la sintaxis de una página html, hay que entender para que vamos o tenemos que aprender javascript. recuerdas la lista de numeros del ejemplo anterior? pues imagina que en lugar de 5 numeros, vamos a tener una lista de 10 numeros o de 500 o de 1000 numeros. tendriamos que escribir linea por linea el código html para que el navegador entienda que es una lista de numeros. y que harias si esta lista cambia constantemente, esta es la importancia de javascript y en general de los lenguajes de programación para poder hacer tareas repetitivas, para hacer mas eficientes las tareas que se realizan en nuestra página.
 
 Antes de comenzar a aprender javascript, tenemos que endender algunos conceptos basicos de javascript.
 
@@ -145,19 +145,19 @@ recuerda hay que practicar, y tener paciencia para aprender.
 ## Preparando el terreno {#preparando-el-terreno}
 
 Existen 3 herramientas que nos permiten interactuar con javascript: nodejs, un navegador web o un playground de javascript.
-para seguir aprendiendo javascript vamos a instalar RunJS, RunJs es un playground que nos permite ejecutar codigo javascript de forma sencilla.
+para seguir aprendiendo javascript vamos a instalar RunJS, RunJs es un playground que nos permite ejecutar código javascript de forma sencilla.
 
 puedes descargarlo para windows 10 desde [aqui](https://github.com/lukehaas/RunJS/releases/download/v2.4.1/RunJS-Setup-2.4.1.exe).
 este programa es de pago pero cuenta con una versión gratuita.
 
 Descarga el programa e instala en tu computador.
 
-despues de instalarlo, te aperecera una ventanan como esta: 
+despues de instalarlo, te aparecerá una ventanan como esta: 
 
 ![runjs](/images/02/runjs.png)
 
 
-simplmente nos da la bienvenida a RunJS, RunJS cuenta con una ventana partida en dos partes, del lado izquierdo esta el editor de codigo, aqui vamos a poner nuestro codigo, y el lado derecho esta el resultado de ejecutar nuestro codigo.
+simplmente nos da la bienvenida a RunJS, RunJS cuenta con una ventana partida en dos partes, del lado izquierdo esta el editor de código, aqui vamos a poner nuestro código, y el lado derecho esta el resultado de ejecutar nuestro código.
 
 
 📌 __Nota:__ para agrandar el tamaño de letra sigue el siguiente menú: 
@@ -165,7 +165,7 @@ simplmente nos da la bienvenida a RunJS, RunJS cuenta con una ventana partida en
 ![letra02](/images/02/cambiar_tamano_menu_02.png)
 
 
-ya que tenemos todo instalado prueba lo siguiente: en el lado izquierdo del editor de codigo escribe 
+ya que tenemos todo instalado prueba lo siguiente: en el lado izquierdo del editor de código escribe 
 
 ``` javascript
  console.log("Hola mundo");
@@ -174,7 +174,7 @@ y revisa que pasa del lado derecho del RunJS:
 
 🔥🔥🔥🔥 Bien hecho, si todo bien hasta aqui vamos empezar con los conceptos básicos. 🔥🔥🔥🔥
 
-> 🧠 __Para saber más:__ Antes que nada, quiero que sepas que lo que vamos a ver acontinuación son conceptos que se aplican para otros lenguajes de programacion.
+> 🧠 __Para saber más:__ Antes que nada, quiero que sepas que lo que vamos a ver acontinuación son conceptos que se aplican para otros lenguajes de programación.
 
 Te invitamos a que cada uno de los comandos que presentamos a continuacion los escribas y practiques en en RunJS
 
@@ -238,9 +238,9 @@ Teniendo esto en cuenta, debemos saber que los navegadores web intentan cumplir 
 
 Además, todo esto va cambiando a medida que se van lanzando nuevas versiones de los navegadores web, donde su compatibilidad ECMAScript suele aumentar
 
-El grupo encargador llevar el control de la especificación ECMAScript es la [TEC39](https://github.com/tc39). en su página de github se encuentran los que vendra en el futuro y que metodos o funciones fueron descartadas y por que.
+El grupo encargador llevar el control de la especificación ECMAScript es la [TEC39](https://github.com/tc39). en su página de github se encuentran los que vendrá en el futuro y que metodos o funciones fueron descartadas y por que.
 
-Esto es imporante de entender por que en los trabajos piden que semas javascritp usando ECMAScript 6. y es necesario saber un poco de esto. 
+Esto es imporante de entender por que en los trabajos piden que sepas javascritp usando ECMAScript 6. y es necesario saber un poco de esto. 
 
 * * *
 
@@ -268,9 +268,9 @@ var x = 45; // También se utilizan al final de una línea.
 
 ```
 
-> 💪 Escribiendo en RunJS linea por linea y observando el resultado del lado derecho, ¿notas la diferencia de codigo comentando y no comentando?.
+> 💪 Escribe el ejemplo anterior en RunJS linea por linea y observando el resultado del lado derecho. ¿notas la diferencia de código comentando y no comentado?.
 
-¿Pero debo comentar todo? 
+Ahora, te podrás preguntar: ¿Debo comentar todo?, ¿Qué debo comentar?. 
 
 Comentar código también es un arte que debe ser aprendido, ya que al principio es muy fácil cometer errores y comentar en exceso o no ser concreto al comentar. No suele ser grave porque los comentarios no afectan al funcionamiento del programa, pero en equipos de trabajo donde hay varios programadores suele ser molesto para los programadores con más experiencia.
 
@@ -306,7 +306,7 @@ var oferta = precio * 0.5;
 
 En este fragmento de código, no utilizamos comentarios porque el nombre de las variables ya ayuda a entender el código y lo hace autoexplicativo. De esta forma, generamos menos código (e incluso comentarios) y se entiende igualmente. En los siguientes temas, veremos una serie de consejos a la hora de nombrar variables, funciones u otros elementos dentro de la programación.
 
-📌 __Nota__ hasta ahorita solo hemos visto comentarios, no es necesario hasta ahora que sepas que hacen las demas lineas de codigo. solo es necesario que sepas la sintaxis de comentarios, y que los comentarios son una forma de documentar tu código.
+📌 __Nota__ hasta ahorita solo hemos visto comentarios, no es necesario hasta ahora que sepas que hacen las demas lineas de código. solo es necesario que sepas la sintaxis de comentarios, y que los comentarios son una forma de documentar tu código.
 
 
 
@@ -364,7 +364,7 @@ Si tenemos dudas, podemos utilizar la función typeof, que nos devuelve el tipo 
 
 ### Declarando variables {#declarando-variables}
 
-En los ejemplos anteriores de codigo Javascript, hemos utilizado la palabra reservada `var` para declarar variables. pero este tiene muchos errores y no es una buena práctica. actualmente En las versiones modernas de Javascript (ES6 o ECMAScript 2015) o posteriores, se introduce la palabra clave let en sustitución de var. Con ella, en lugar de utilizar los ámbitos globales y a nivel de función (var), utilizamos los ámbitos clásicos de programación: ámbito global y ámbito local.
+En los ejemplos anteriores de código Javascript, hemos utilizado la palabra reservada `var` para declarar variables. pero este tiene muchos errores y no es una buena práctica. actualmente En las versiones modernas de Javascript (ES6 o ECMAScript 2015) o posteriores, se introduce la palabra clave let en sustitución de var. Con ella, en lugar de utilizar los ámbitos globales y a nivel de función (var), utilizamos los ámbitos clásicos de programación: ámbito global y ámbito local.
  
 Siempre que sea posible se debería utilizar let y const (ver a continuación), en lugar de var. Declarar variables mediante var se recomienda en fases de aprendizaje o en el caso de que se quiera mantener compatibilidad con navegadores muy antiguos utilizando ECMAScript 5, sin embargo, hay estrategias mejores a seguir que utilizar var en la actualidad.
 
@@ -484,7 +484,7 @@ Veamos un ejemplo:
   split es un metodo de la clase String que nos devuelve un array con las palabras que se separan por el separador indicado. en este caso el sapador es un espacio en blanco. `" "` comillas dobles siguidas de un espacio en blanco.
   (recuerda que es indistinto si utilizamos comillas simples o comillas dobles)
 
-  > __📌 Nota:__ Aqui hay otro concepto que uan no hemos visto, el array, el array se define por medio de llaves `[]`. y sirve para guardar una lista de elementos. mas adelante veremos como utilizarlo.
+  > __📌 Nota:__ Aqui hay otro concepto que aún no hemos visto, el array, el array se define por medio de llaves `[]`. y sirve para guardar una lista de elementos. mas adelante veremos como utilizarlo.
 
 
 ### - String.lastIndexOf(caracter)`: {#array-lastIndexOf}
@@ -517,7 +517,7 @@ Veamos un ejemplo:
 
 Existen 3 formas de concatenar strings: una que es las mas ineficiente, que usa el metodo concat, asi que de esta no hablaremos por que hay mejores formas de concatenar strings. 
 
-Entiendas con contantenar con la forma de unir cadenas de texto.
+cuando hablamlos de contantenar, hablamos de la forma de unir cadenas de texto.
 
 veamos la primera forma de concatenar con el simbolo de `+`:
 
@@ -535,7 +535,7 @@ veamos la primera forma de concatenar con el simbolo de `+`:
   Como puedes notar al usar el simbolo de `+` cuando concatenamos dos strings, el problema es que al contanar el string de nombre con el de apellido no inserta un espacio entre ellos (como deben de escribirse los nombres completos). 
   para esto que tenemos que utilizar el simbolo de `+` seguido de un espacio en blanco de definido dentro de las comillas dobles `" "` añadir otro simbolo de `+` y el string de apellido para poder formar el nombre completo.
 
-  Este es un problema ya que si queremos concatenar varios strings, podemos utilizar la combinacion de simbolo de `+` espacio en blanco `" "` simbolo de `+` para concatenar todos los strings que queramos.
+  Este es un problema ya que si queremos concatenar varios strings, podemos utilizar la combinación de simbolo de `+` espacio en blanco `" "` simbolo de `+` para concatenar todos los strings que queramos.
 
   Para esto tenemos una forma mas dificil de hacerlo, el template string.
 
@@ -548,7 +548,7 @@ veamos la primera forma de concatenar con el simbolo de `+`:
 
   > ***Pruebalo en RunJS para ver el resultado***
 
-  El template estring es una forma mas "natura" de concatenar strings, es decir, que no necesita el simbolo de `+` para concatenar strings, pero si para poder concatenar varios strings como si estuvieramos escribiendo normalmente, solo que las variables deben de estar entre esta combinacion de caracateres `${}`. 
+  El template estring es una forma mas "natural" de concatenar strings, es decir, que no necesita el simbolo de `+` para concatenar strings, pero si para poder concatenar varios strings como si estuvieramos escribiendo normalmente, solo que las variables deben de estar entre esta combinación de caracateres `${}`. 
 
   > __📌 Nota:__ practica el ejercicio para ver como funciona el template string. y no tengas dudas
 
@@ -560,11 +560,11 @@ veamos la primera forma de concatenar con el simbolo de `+`:
 
   Tal vez este tema ha sido bastante difícil para ti, pero no te preocupes, si los conceptos teoricos no quedan de todo claros con el tiempo y mucha practica estos temas empiezan a quedar mas claro. 
 
-  Lo que si es importante es que tengas muy claro los tipos de datos, los metodos de string y concatenar strings por que es algo que vamos a necessitar mas adelante.
+  Lo que si es importante es que tengas muy claro los tipos de datos, los metodos de string y concatenar strings por que es algo que vamos a necesitar mas adelante.
 
-  Es importante que no tengas dudas con estos temas ya que esto es como una bola de nieve, se empieza a hacer mas y mas grande y tienes que aprender muchos conceptos, para que ya que tengas estos datos en la mente, sirvan como herramientas para poder resolver problemas relacionadas con codigo. 
+  Es importante que no tengas dudas con estos temas ya que esto es como una bola de nieve, se empieza a hacer mas y mas grande y tienes que aprender muchos conceptos, para que ya que tengas estos datos en la mente, sirvan como herramientas para poder resolver problemas relacionadas con código. 
 
-  aun estamos lejos de ensamblar nuestas piezas html, css, javascript. pero quiero que tengas en mente que esto del desarrollo no es una carrera de velocidad si no de resistencia. es una carrera de fondo. no te desanimes y practica todos los dias. 
+  aún estamos lejos de ensamblar nuestas piezas html, css, javascript. pero quiero que tengas en mente que esto del desarrollo no es una carrera de velocidad si no de resistencia. es una carrera de fondo. no te desanimes y practica todos los dias. 
 
 
   Ahora para seguir con el siguiente tema, es importante que te pongas a prueba con los siguientes ejercicios:
